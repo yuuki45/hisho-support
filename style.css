@@ -1,0 +1,39 @@
+/* システム手帳の意匠に合わせたサポートページ（アプリのUIと同じ: レザーの地・箔押しの金・リフィルの紙） */
+:root {
+  --leather: #5b2330;
+  --gold: #8a6a22;
+  --foil: #d9ba6b;
+  --paper: #f7f2e8;
+  --ink: #2a2126;
+}
+body {
+  font-family: "Hiragino Sans", "Helvetica Neue", sans-serif;
+  max-width: 720px; margin: 0 auto; padding: 0 20px 80px;
+  color: var(--ink); background: var(--paper); line-height: 1.9;
+  letter-spacing: .02em;
+}
+header {
+  background: var(--leather); margin: 0 -20px 32px; padding: 22px 20px;
+  border-bottom: 2px solid var(--foil);
+}
+header a { color: var(--foil); text-decoration: none; font-weight: 600; letter-spacing: .08em; }
+h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: .06em; margin: 0 0 1.2em; }
+h2 {
+  font-size: 1.05rem; font-weight: 600; letter-spacing: .04em;
+  margin: 2.6em 0 .8em; padding-left: 12px; border-left: 4px solid var(--foil);
+}
+a { color: var(--gold); }
+.sheet {
+  background: #fff; border: 1px solid #e4dccb; border-radius: 10px;
+  padding: 6px 22px 18px; margin: 22px 0;
+}
+.free { border-left: 4px solid #3d7a5c; }
+.paid { border-left: 4px solid var(--foil); }
+dl { margin: 0; }
+dt { font-weight: 600; margin-top: 1.4em; }
+dd { margin: .4em 0 0; }
+.nav { margin-top: 40px; font-size: .95rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; font-size: .8rem; color: #6e6259;
+  border-top: 1px solid #ddd4c4;
+}
